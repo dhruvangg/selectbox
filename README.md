@@ -29,3 +29,13 @@ You can use following cdn links. (Note: Style is just for general purpose, you c
 ```
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/dhruvangg/selectbox/dist/selectbox.css" />
 ```
+
+## Feedback
+
+If you have any feedback, please reach out to us at dhruvangg@gmail.com
+
+
+## Support
+
+For support, email dhruvangg@gmail.com or connect with me on [LinkedIN](https://www.linkedin.com/in/dhruvangg/)
+
