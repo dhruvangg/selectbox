@@ -5,45 +5,96 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;500&display=swap" rel="stylesheet">
-    <style>
-        * {
-            font-family: 'Nunito', sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-    </style>
     <link rel="stylesheet" href="dist/selectbox.css">
 
 </head>
 
 <body>
-    <form style="display: flex; width: 400px; justify-content: space-between;">
-        <select name="city" id="city" data-selectbox>
-            <option value="">Select City</option>
-            <option value="Ahmedabad">Ahmedabad</option>
-            <option value="Bangalore">Bangalore</option>
-            <option value="Chennai">Chennai</option>
-            <option value="Delhi">Delhi</option>
-            <option value="Hyderabad">Hyderabad</option>
-        </select>
+    <section class="my-16 text-center">
+        <h1 class="text-6xl font-semibold mb-8">Simplest Selectbox</h1>
+        <h3 class="text-3xl">A styleable replacement for SELECT elements</h3>
+    </section>
+    <article class="prose lg:prose-xl mx-auto">
+        <h3>Usage</h3>
+        <p>It has a very simple implementation. You just need to add script of the library and use
+            <code>data-select</code> as data attribute shown below.
+        </p>
+        <pre><code>&lt;script src="path-to-libray/selectbox.js"&gt;&lt;/script&gt;
 
-        <select name="country" id="country" data-selectbox>
-            <option value="">Select Country</option>
-            <option value="India">India</option>
-            <option value="USA">USA</option>
-            <option value="UK">UK</option>
-            <option value="Australia">Australia</option>
-        </select>
-        <button>Submit</button>
-    </form>
+&lt;select data-selectbox&gt;
+    &lt;option value="Option 1"&gt;Option 1&lt;/option&gt;
+    &lt;option value="Option 2"&gt;Option 2&lt;/option&gt;
+    ...
+&lt;/select&gt;</code></pre>
+        <p>You can use following cdn links. <i>(Note: Style is just for general purpose, you can ignore if you want to
+                use
+                your own style.)</i></p>
+        <pre><code>&lt;script src="https://cdn.jsdelivr.net/gh/dhruvangg/selectbox@1.0.0/dist/selectbox.js"&gt;&lt;/script&gt;</code></pre>
+        <pre><code>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/dhruvangg/selectbox@1.0.0/dist/selectbox.css" /&gt;</code></pre>
+        <h3>Demo</h3>
+    </article>
+    <section class="mx-auto w-[65ch] mb-32">
+        <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
+            <div class="max-w-lg mx-auto text-center">
+                <h1 class="text-2xl font-bold sm:text-3xl">Get started today!</h1>
+            </div>
 
+            <form action="" class="max-w-md mx-auto mt-8 mb-0 space-y-4">
+                <div>
+                    <label for="email" class="sr-only">Country</label>
+                    <div class="relative">
+                        <div class="w-full text-sm border-gray-200 rounded-lg shadow-sm">
+                            <select name="country" id="country" data-selectbox>
+                                <option value="">Select Country</option>
+                                <option value="India">India</option>
+                                <option value="USA">USA</option>
+                                <option value="UK">UK</option>
+                                <option value="Australia">Australia</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <label for="email" class="sr-only">City</label>
+                    <div class="relative">
+                        <div class="w-full text-sm border-gray-200 rounded-lg shadow-sm">
+                            <select name="city" id="city" data-selectbox>
+                                <option value="">Select City</option>
+                                <option value="Ahmedabad">Ahmedabad</option>
+                                <option value="Bangalore">Bangalore</option>
+                                <option value="Chennai">Chennai</option>
+                                <option value="Delhi">Delhi</option>
+                                <option value="Hyderabad">Hyderabad</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-end">
+                    <button type="submit"
+                        class="inline-block px-5 py-3 ml-3 text-sm font-medium text-white bg-blue-500 rounded-lg">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p class="text-gray-500 text-sm">
+                    &copy;
+                    <script>document.write(new Date().getFullYear())</script> Simplest Selectbox. Made with ❤️ by <a
+                        href="" class="text-blue-500">Dhruvangg</a>
+                </p>
+            </div>
+        </div>
+    </footer>
     <script src="dist/selectbox.js"></script>
-    <script>
-        const selectBox = new SelectBox()
-    </script>
 </body>
 
 </html>
