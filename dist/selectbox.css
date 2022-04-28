@@ -1,0 +1,56 @@
+.selectbox-wrapper {
+    position: relative;
+    box-sizing: border-box;
+}
+
+.selectbox-wrapper select {
+    display: none;
+}
+
+.selectbox-wrapper .selectbox-label {
+    padding: 5px 10px;
+    display: block;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.selectbox-wrapper ul {
+    display: none;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    z-index: 9;
+    width: 100%;
+    transition: opacity 0.3s ease-in-out;
+    filter: drop-shadow(0 0 5px #e2e2e2);
+    border-radius: 5px;
+    border: 1px solid #eee;
+}
+
+.selectbox-wrapper.open ul {
+    display: block;
+}
+
+.selectbox-wrapper ul.show {
+    opacity: 1;
+}
+
+.selectbox-wrapper ul li {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.selectbox-wrapper .selectbox-item {
+    background-color: #fff;
+    color: #000;
+}
+
+.selectbox-wrapper .selectbox-item:hover {
+    background-color: #2196f3;
+    color: #fff;
+}
