@@ -57,6 +57,6 @@ class SelectBox {
     }
 }
 
-(function(){
+window.addEventListener('DOMContentLoaded', (event) => {
     new SelectBox()
-})()
+})
