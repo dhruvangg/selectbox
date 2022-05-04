@@ -57,4 +57,6 @@ class SelectBox {
     }
 }
 
-new SelectBox()
+(function(){
+    new SelectBox()
+})()
