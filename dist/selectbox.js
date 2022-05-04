@@ -11,12 +11,6 @@ class SelectBox {
             wrapper.classList.add("selectbox-wrapper")
             wrapper.dataset.name = element.getAttribute("name")
 
-            // let max = 0
-            // Array.from(element.options).forEach(el => {
-            //     max = max < el.innerHTML.length ? el.innerHTML.length : max
-            // })
-            // wrapper.style.width = `${(max * 10) + 20}px`
-
             element.parentNode.insertBefore(wrapper, element)
             wrapper.appendChild(element)
             const label = document.createElement("label")
