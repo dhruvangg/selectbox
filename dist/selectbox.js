@@ -36,6 +36,7 @@ class SelectBox {
 
     #createList(select, wrapper) {
         const list = document.createElement("ul")
+        list.setAttribute("tabindex", 1)
         list.classList.add("selectbox-list")
         select.querySelectorAll("option").forEach(option => {
             const item = document.createElement("li")
